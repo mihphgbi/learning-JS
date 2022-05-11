@@ -1,0 +1,78 @@
+html,body,h2,div{
+    margin: 0;
+    padding: 0;
+}
+span{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    width: 100%;
+    text-align: center;
+}
+.container{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #fdfbf2;
+    padding: 60px 60px;
+}
+.slider{
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+.slide-listbox{
+    position: absolute;
+    display: flex;
+    transition: transform 0.6s linear;
+}
+
+.box-title{
+    padding: 10px 15px;
+}
+.box-name a{
+    display: block;
+    display: -webkit-box;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 17px;
+    color: #462c09;
+    -webkit-line-clamp: 1; /*line display*/
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.box-name a:hover{
+    color: #ee711e;
+
+}
+.box-price{
+    text-align: right;
+    font-size: 14px;
+    padding-right: 30px;
+
+}
+.box-image img{
+    display: block;
+    margin: auto;
+}
+.btn-control-left,.btn-control-right{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    font-size: 40px;
+    color: #462c09;
+    cursor: pointer;
+}
+.btn-control-left{
+    left: 0;
+}
+.btn-control-right{
+    right: 0
+}
+.btn-control-left:hover, .btn-control-right:hover{
+    opacity: 0.8;
+}
