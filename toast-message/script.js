@@ -25,7 +25,7 @@ function toast({
                 <h3 class="toast__title">${title}</h3>
                 <p class="toast__msg">${message}</p>
             </div>
-            <div class="toast__close" onclick= (${main.removeChild(toast)})>
+            <div class="toast__close" >
                 <i class="fa-solid fa-xmark"></i>
             </div>`;
         main.appendChild(toast);
