@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../tab-ui/style.css">
+</head>
+<body>
+    <div id="root">
+        <div class="main">
+            <div class="tabs">
+                <div class="tab-item active">
+                    <i class="fa-solid fa-code"></i>
+                          React
+                </div>
+                <div class="tab-item">
+                    <i class="fa-solid fa-gear"></i>
+                        Angular
+                </div>
+                <div class="tab-item">
+                    <i class="fa-solid fa-circle-plus"></i>
+                        Ember
+                </div>
+            </div>
+            <div class="tab-content active">
+                <h2>React</h2>
+                <p>Lot of people use React as the V in MVC. Since React makes no assumptions about the rest
+                    of your technology stack, it's easy to try it out on a small feature in an existing project
+                </p>
+            </div>
+            <div class="tab-content">
+                <h2>Angular</h2>
+                <p>HTML is great for declaring static documents, but it falters when we 
+                    try to use it for declaring dynamic views in web-applications. AngularJS lets you
+                    extend HTMl vocabulary for your application. The resulting environment is extraordinarily
+                    expensive, readable, and quick to develop.
+               </p>
+            </div>
+            <div class="tab-content">
+                <h2>Ember</h2>
+                <p>
+                    Ember.js is an open-source JavaScript application framework, based on 
+                    the model-view-controller (MVC) pattern. It allows developers to create
+                    scalable single-page web applications by incorporating common idioms and best
+                    practices into the framework. What is your favorite JS framework?
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../tab-ui/script.js"></script>
+</body>
+</html>
