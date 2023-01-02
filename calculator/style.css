@@ -12,9 +12,6 @@ body {
 .root{
     width: var(--width-calculator);
 }
-.cal-buttons {
-
-}
 .cal-screen{
     padding-bottom: 32px;
 }
@@ -26,6 +23,7 @@ body {
     border: 1px solid grey;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
 }
 .cal-button input[type='button'] {
     /* width: calc(var(--width-calculator)/4)px; */

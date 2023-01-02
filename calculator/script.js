@@ -1,3 +1,6 @@
+function parse(data) {
+    return new Function( `return ${data} `)();
+}
 function handleValue (value) {
     const calculation = document.querySelector('[name="screen"]');
     if (value) {
@@ -14,6 +17,5 @@ function handleClear(value) {
 }
 function handleSubmit() {
     const calculation = document.querySelector('[name="screen"]');
-    const arr = calculation;
-    console.log(Number(calculation));
+    calculation.value = parse(calculation.value);
 }
