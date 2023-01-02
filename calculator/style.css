@@ -1,0 +1,50 @@
+/* reset CSS */
+body {
+    margin: 0;
+    padding: 0;
+    display: inherit;
+}
+
+/* css for calculator */
+:root{
+    --width-calculator: 500px;
+}
+.root{
+    width: var(--width-calculator);
+}
+.cal-buttons {
+
+}
+.cal-screen{
+    padding-bottom: 32px;
+}
+.cal-screen input[type='text'] {
+    /* width: calc(var(--width-calculator)/4)px; */
+    width: -webkit-fill-available;
+    height: 70px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.cal-button input[type='button'] {
+    /* width: calc(var(--width-calculator)/4)px; */
+    width: -webkit-fill-available;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.btn-num input[type='button']{
+    background-color: #3c4043;;
+}
+.btn-tool input[type='button'] {
+    background-color: #5f6368;
+
+}
+.btn-submit input[type='button'] {
+    background-color: #8ab4f8;
+    color: black;
+    font-weight: bold;
+}
