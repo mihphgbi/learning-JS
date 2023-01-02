@@ -1,0 +1,133 @@
+/* bootstrap */
+.row{display: flex;}
+.col{width: calc(100%/12);}
+.col-2{width: calc(100%/12*2);}
+.col-3{width: calc(100%/12*3);}
+.col-4{width: calc(100%/12*4);}
+.col-5{width: calc(100%/12*5);}
+.col-6{width: calc(100%/12*6);}
+.col-7{width: calc(100%/12*7);}
+.col-8{width: calc(100%/12*8);}
+.col-9{width: calc(100%/12*9);}
+.col-10{width: calc(100%/12*10);}
+.col-11{width: calc(100%/12*11);}
+
+/* main page */
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E9E8EF;
+}
+.root{
+    padding: 0;
+    margin: 0;
+}
+.dashboard{
+    position: fixed;
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.dashboard header{
+    justify-content: space-evenly
+}
+.hidden-dashboard i, .add-music i{
+    padding: 20px;
+    color: #EF2160;
+}
+.playlist_name{
+    margin: 20px 0 0px 0;
+    text-align: center;
+    color: #EF2160;
+}
+.music_name{
+    margin: 0px 0 30px 0;
+    text-align: center;
+    color: #000;
+}
+.cd{
+
+}
+.cd_thumb{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+.control{
+    display: flex;
+    padding-top: 10px;
+}
+.range-slider input{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+
+}
+.btn{
+    width: calc(100%/5);
+    text-align: center;
+    font-size: 20px;
+    color: #7B75AC;
+}
+.btn-repeat i,.btn-prev i,.btn-next i,.btn-shuffle i{
+    margin: 15px;
+}
+.btn-prev{
+
+}
+.btn-play i{
+    font-size: 50px;
+    color: #EF2160;
+}
+.btn-play .fa-circle-pause{
+    display: none;
+}
+.btn-next{
+
+}
+.btn-shuffle{
+
+}
+.playlist{
+    padding-top: 410px;
+}
+.song{
+    max-width: 400px;
+    max-height: 100px;
+    background-color: #FEFEFF;
+    border-radius: 10px;
+    margin: 8px 0 8px 0;
+    border: 1px solid #ddd;
+}
+.song:hover,.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.song_img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.song_content{
+
+}
+.song.active{
+    background-color:#F1F1F1;
+}
+.song.active .song_name{
+    color: #EF2160;
+}
+.song_author{
+    font-size: 13px;
+    color: #B0AEC2;
+}
+.song_more_option{
+    padding: 30px;
+    font-size: 30px;
+}

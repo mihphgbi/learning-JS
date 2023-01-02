@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="root">
+        <div class="dashboard">
+            <header>
+                <div class="row">
+                    <div class="hidden-dashboard btn col">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="title col-10">
+                        <h4 class="playlist_name">New playing</h4>
+                        <h3 class="music_name">Nandemonaiya</h3>
+                    </div>
+                    <div class="add-music btn col">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="cd">
+                <div class="cd_thumb" style="background-image: url('./assets/img/img_1.jpg');"></div>
+            </div>
+            <div class="range-slider">
+                <input class="input-range" type="range" step="1" value="20" min="1" max="50">
+                <span class=""></span>
+            </div>
+
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-play">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-sharp fa-solid fa-forward-step"></i>    
+                </div>
+                <div class="btn btn-shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="row song">
+                <div class="col-3 song_img">
+                    <img src="./assets/img/img_1.jpg" alt="Your-name" srcset="">
+                </div>
+                <div class="col-8 song_content">
+                    <h3 class="song_name">Nandemonaiya</h3>
+                    <p class="song_author">RADWIMPS</p>
+                </div>
+                <div class="col song_more_option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="row song active">
+                <div class="col-3 song_img">
+                    <img src="./assets/img/img_1.jpg" alt="Your-name" srcset="">
+                </div>
+                <div class="col-8 song_content">
+                    <h3 class="song_name">Nandemonaiya</h3>
+                    <p class="song_author">RADWIMPS</p>
+                </div>
+                <div class="col song_more_option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./script.js"></script>    
+</body>
+</html>
