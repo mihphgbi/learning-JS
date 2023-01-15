@@ -1,0 +1,91 @@
+html, body , h2, div{
+    padding: 0;
+    margin: 0;
+    display: inherit;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    background: url("../img/colors.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    width: 1600px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    width: 30%;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.list-cards{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    background-color: #FFF;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 5ms ease-in;
+}
+/* .card :hover {
+    width: 350px;
+    height: 350px;
+} */
+.card-img {
+
+}
+.card-img img{
+    height: 200px;
+    border-radius: 5px;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title {
+    margin-top: 16px;
+}
+.card-title a{
+    color: #FFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+.card-description p{
+    color: #FFF;
+}
+#slider {
+    background-color: blueviolet;
+}
+#tab-ui {
+    background-color: #f6a8c1;
+}
+#toast-msg {
+    background-color: cornflowerblue;
+}
+#music-player{
+    background-color: #EF2160;
+}
