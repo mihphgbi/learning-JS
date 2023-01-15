@@ -1,21 +1,22 @@
-html, body , h2, div{
+html, body, h2, div {
     padding: 0;
     margin: 0;
     display: inherit;
 }
-#root{
-    width: 100%;
-    height: 100%;
+
+body {
     background: url("../img/colors.png") no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .container {
     width: 1600px;
     height: 900px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .page-title {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -28,16 +29,18 @@ html, body , h2, div{
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
-.list-cards{
+
+.list-cards {
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
-.card{
+
+.card {
     position: relative;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -48,44 +51,60 @@ html, body , h2, div{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     transition: all 5ms ease-in;
 }
+
 /* .card :hover {
     width: 350px;
     height: 350px;
 } */
-.card-img {
+.card-img {}
 
-}
-.card-img img{
+.card-img img {
     height: 200px;
     border-radius: 5px;
 }
+
 .card-text {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .card-title {
     margin-top: 16px;
 }
-.card-title a{
+
+.card-title a {
     color: #FFF;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
 }
-.card-description p{
+
+.card-description p {
     color: #FFF;
 }
+
 #slider {
     background-color: blueviolet;
 }
+
 #tab-ui {
     background-color: #f6a8c1;
 }
+
 #toast-msg {
-    background-color: cornflowerblue;
+    background-color: green;
 }
-#music-player{
+
+#music-player {
     background-color: #EF2160;
+}
+
+#calculator {
+    background-color: #8ab4f8;
+}
+
+#matching-card-game {
+    background-color: chocolate;
 }
