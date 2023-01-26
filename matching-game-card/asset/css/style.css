@@ -45,6 +45,7 @@ body {
     color: #0033CC;
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
     transition: color .3s ease-in-out, back-ground 3s ease-in-out;
 }
 /* .btn :hover{
