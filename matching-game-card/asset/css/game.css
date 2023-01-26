@@ -5,8 +5,8 @@ html {
     display: inherit;
     height: 100%;
 }
-/* body {
-    background: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+body {
+    background: #a0baeb;
     color: #fff;
 } */
 .container {
@@ -23,7 +23,7 @@ html {
     margin: 16px;
     /* display: grid;
     grid-template-rows: auto; */
-    background: radial-gradient(#76b2fe, #b69efe);
+    background: radial-gradient(#f6f7f8, #b1b4df, #a2c1eb,#548eda, #1d12b3, #0d0b75);
     width: 200px;
     height: 300px;
     border-radius: 15px;
@@ -36,12 +36,63 @@ html {
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.1), 
       -5px -5px 30px 15px rgba(0,0,0,0.20);
 }
-.value {
-    width: 100%;
-    height: 50%;
+/* show image */
+.show-value {
     background-color: transparent;
-    transition: all 1s ease-in;
     text-align: center;
     font-size: 72px;
     line-height: 400%;
+}
+/* if cards are matched, let's hide this */
+.card.hidden {
+    background-color: transparent;
+    background: none;
+    border-radius: unset;
+    box-shadow: none;
+    color: transparent;
+    font-size: 0;
+    pointer-events: none;
+}
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card{
+        width: 70px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

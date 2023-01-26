@@ -79,7 +79,6 @@ function createGame(arr) {
                     valueArr.push(element);
                     // show value of card
                     const result = document.createElement('div');
-                    result.classList.add('value');
                     result.innerHTML = `${element.value}`; 
                     card.appendChild(result);
                 }
@@ -87,7 +86,10 @@ function createGame(arr) {
                     if(valueArr.length != 0 && valueArr[0].value === valueArr[1].value) {
                         setTimeout(() => {
                             resetArray(valueArr);
-                            showValue.forEach (s => s.remove());
+                            showValue.forEach (s => {
+                                s.classList.remove('show-value');
+                                s.classList.add('hidden');
+                            });
                         },1000); 
                     } else {
                         setTimeout(() => {
